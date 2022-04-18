@@ -14,11 +14,10 @@ const Login = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!userInput.length) {
-      alert('Enter your username first!');
-      return;
+      return alert('Enter your username first!');
     }
 
-    setUser({ username: userInput });
+    setUser({ name: userInput });
     navigate('/game');
   };
 
@@ -29,12 +28,12 @@ const Login = () => {
         <Input
           placeholder="Enter your nickname here..."
           name="username"
+          type="text"
           onChange={(e) => setUserInput(e.target.value)}
           value={userInput}
         />
-        <Button disabled={!userInput.length}>Play</Button>
+        <Button>Play</Button>
       </StyledForm>
-      {userInput && <p>Welcome {userInput}</p>}
     </Container>
   );
 };

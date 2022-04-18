@@ -1,12 +1,12 @@
 export type User = {
-  username?: string;
+  name?: string;
 };
 
 export interface UserContextValue {
   user: User;
   setUser: React.Dispatch<
     React.SetStateAction<{
-      username?: string;
+      name?: string;
     }>
   >;
 }

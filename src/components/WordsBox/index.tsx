@@ -1,13 +1,6 @@
 import SingleWord from '../SingleWord';
 import { Container } from './styles';
-
-interface WordsBoxProps {
-  allWords: string[];
-  goodWords: string[];
-  selectedWords: string[];
-  isChecking: boolean;
-  setSelectedWords: (words: string[]) => void;
-}
+import { WordsBoxProps } from './types';
 
 const WordsBox = ({
   allWords,

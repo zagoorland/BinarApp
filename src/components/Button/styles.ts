@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StyledButton = styled.button`
+const StyledButton = styled.button`
   background: none;
   border: 1px solid deepskyblue;
   color: deepskyblue;
@@ -22,3 +22,5 @@ export const StyledButton = styled.button`
     cursor: not-allowed;
   }
 `;
+
+export default StyledButton;
